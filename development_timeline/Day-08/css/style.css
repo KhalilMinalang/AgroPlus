@@ -1,0 +1,347 @@
+/* How to add fonts from your computer */
+@font-face {
+	font-family: 'open sans';
+	src: url("OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'passion one';
+	src: url("PassionOne-Regular.otf");
+}
+
+body {
+	background: url(../images/body-bg.gif) 50% 0; /* 50% in x-axis and 0% in the y-axis. Position of the image */
+	font: 12px/18px arial; /* line-height/font-size */
+	color: #717171;
+	margin: 0;
+	padding: 0;
+	position: relative; /* If we move anything in the body, it will move according to its' last position */
+	
+}
+
+main {
+	background: url(../images/main-bg.jpg) no-repeat center 0;
+	min-height: 100%;
+}
+
+header {
+	position: relative;
+	width: 950px;
+	margin: 0px auto; /* aligns the header @the center of the page */
+	padding: 80px 0 0 0; /* Padding @the top position */
+	background: url(../images/slide-1.jpg) no-repeat center 80px; /* 80px from the top */
+	z-index: 2; /* 	Sets the stack order of an element */
+	
+}
+
+.inner {
+	background: url(../images/header-bg.png);
+	padding: 26px 40px 25px 40px;
+	position: relative;
+	z-index: 2;
+}
+
+.logo {
+	display: inline-block;
+	padding: 0;
+	
+}
+
+.logo a {
+	position: relative;
+	background: url(../images/logo.png) no-repeat 0 0;
+	height: 58px;
+	width: 187px;
+	display: block; /* Without this code, text-indent won't work, meaning the link won't disappear */
+	overflow: hidden;
+	text-indent: -99em;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav {
+	float: right;
+	padding: 12px 0 0 0;
+}
+
+.menu ul {
+	position: absolute;
+	top: -999em;
+	left: 0px;
+	display: none;
+	width: 185px;
+	min-height: 28px;
+}
+
+.menu li {
+	position: relative;
+	float: left;
+	margin: 0 28px;
+}
+
+.menu li a {
+	text-decoration: none;
+	display: block;
+	font-family: 'open sans';
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 10px 0 0 0;
+}
+
+.menu li:hover a, .menu li.current a /* Gives highlight to the currect active page */ {
+	color: #afaa9b;
+	background: url(../images/nav-active.png) no-repeat center 0; /* 0 For the y-axis */
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 402px;
+}
+
+.mp-slider {
+	position: absolute;
+	top: -109px;
+	left: 0;
+	right: 0;
+	bottom: 511px;
+}
+
+.mp-prev, .mp-next {
+	position: absolute;
+	width: 31px;
+	height: 402px;
+	bottom: 0;
+	z-index: 3;
+}
+
+.mp-prev {
+	left: 0;
+	background: url(../images/slider-prev.png) no-repeat 0 0;
+	
+}
+
+.mp-next {
+	right: 0;
+	background: url(../images/slider-next.png) no-repeat 0 0;
+	
+}
+
+.mp-prev:hover {
+	background: url(../images/slider-prev.png) no-repeat right 0; /* Shows the right side greyed-out part of slider-prev.png */
+	
+}
+
+.mp-next:hover {
+	background: url(../images/slider-next.png) no-repeat right 0; /* Shows the right side greyed-out part of slider-next.png */
+	
+}
+
+/**********content**********/
+
+.content-bg {
+	background: url(../images/body-bg.gif);
+	padding: 35px 20px 43px 20px;
+}
+
+/**********heading**********/
+
+h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+	padding: 0 0 9px 0;
+	font-weight: normal;
+	margin: 0;
+	padding: 0; /*DUPLICATE!!!*/
+	font-family: 'passion one';
+}
+
+h1 {font-size :40px; line-height: 48px;}
+h2 {font-size :36px; line-height: 44px;}
+h3 {font-size :32px; line-height: 40px;}
+h4 {font-size :28px; line-height: 34px;}
+h5 {font-size :24px; line-height: 30px;}
+h6 {font-size :20px; line-height: 24px;}
+
+/**********indents**********/
+
+.img-indent-bot {margin: 5px 0 16 0;}
+.indent-bottom {padding: 0 0 32px 0;}
+.indent-right {margin-right: 90px;}
+
+.def-list-1 {
+	padding: 0 0 10px 0;
+}
+
+dl, dt, dd, blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.def-list-1 dt {
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0 0 6px 0;
+	font-weight: bold;
+}
+
+.def-list-1 a {
+	color: #b09609;
+	text-decoration: none;
+}
+
+.def-list-1 a:hover {
+	text-decoration: underline;
+}
+
+.banner-box {
+	background: #292929;
+	padding: 25px 135px 35px 40px;
+	position: relative; /* So the author picture won't drift away too far */
+}
+
+.banner-box h3 {
+	font-size: 34px;
+	line-height: 40px;
+	padding: 0;
+}
+
+.banner-box h4 {
+	font-family: 'open sans';
+	line-height: 26px;
+	padding: 0 0 18px 0;
+	letter-spacing: -1px;
+	font-weight: 300px;
+	margin: 5px 0 0 0;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+
+.inside {
+	position: relative;
+	z-index: 2;
+}
+
+quote {
+	font-size: 12px;
+	line-height: 20px;
+	font-style: italic;
+	position: relative;
+	padding: 0 0 15px 0;
+}
+
+.quote strong {
+	color: #b09609;
+	font-weight: normal;
+}
+
+.quote:before {
+	display: inline-block;
+	background: url(../images/quote-before.png) no-repeat 0 0;
+	content: " ";
+	width: 14px;
+	height: 13px;
+	margin: 0 5px 0 0;
+}
+
+.quote:after {
+	display: inline-block;
+	background: url(../images/quote-after.png) no-repeat 0 0;
+	content: " ";
+	width: 14px;
+	height: 13px;
+	margin: 0 0 0 6px;
+}
+
+.author {
+	display: inline-block;
+	font-family: 'open sans';
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+.author icon {
+	font-width: normal;
+}
+
+.banner-img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	
+}
+
+
+a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.button {
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	text-decoration: underline;
+	background: url(../images/link-marker.gif) no-repeat right 7px; /* Aligns the arrow button to the right side */
+	padding: 0 11px 0 0;
+}
+
+.alignright {text-align: right;}
+
+/**********border**********/
+
+.hr-border-1 {
+	border-bottom: 1px solid #323232;
+	margin: 0 0 9px 0;
+}
+
+
+.indent-bottom-1 {
+	padding: 0 0 60px 0;
+}
+
+.heading-1, strong {
+	color: #b30404;
+}
+
+p {padding-bottom: 18px !important;}
+.p1 {padding-bottom: 6px !important;}
+
+.list-1 {
+	padding: 0 0 20px 0;
+}
+
+.list-1 li {
+	display: block;
+	padding: 4px 0 4px 16px;
+	border-top: 1px solid #323232;
+	background: url(../images/list-1-marker.gif) no-repeat 0 10px;
+}
+
+.list-1 li:first-child {
+	border: none;
+	padding: 0 0 6px 16px;
+}
+
+.list-1 li a {
+	color: #717171;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 5px 0 6px;
+	text-decoration: none;
+}
+
+.list-1 li a:hover {color: #ffffff;}
+
